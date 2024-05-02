@@ -1,0 +1,301 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --color: cyan
+}
+
+/* NAVBAR CSS */
+nav {
+    /* position:sticky;
+    top:0px;
+    z-index: 100; */
+    /* background-color: rgb(84, 166, 166); */
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bolder;
+    height: 40px;
+
+}
+
+nav a {
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    color: black;
+    display: inline block;
+    transition: font-size 0.4s;
+}
+
+.AfterNav {
+    position: relative;
+    z-index: 1;
+}
+
+nav>:first-child {
+    background-color: var(--color);
+    border-radius: 5px;
+    padding: 1px 8px 1px 8px;
+}
+
+.header {
+    background-image: url("components/header.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: max(91vh, 570px);
+}
+
+.box-bgimg {
+    height: max(91vh, 570px);
+    width: 100%;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    position: absolute;
+    background-color: white;
+}
+
+.hello {
+    background-color: var(--color);
+    width: fit-content;
+    border-radius: 15px;
+    padding: 5px 14px 5px 14px;
+    font-size: larger;
+    margin: 2px 0px 10px 0px;
+}
+
+.ContainerHeader>h1 {
+    font-size: 45px;
+}
+
+.mail,
+.phone,
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.mail a,
+.phone a,
+.location a {
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+.social-links {
+    padding: 30px 0px 30px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-size: larger;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: fit-content;
+    flex-wrap: wrap;
+}
+
+.profile-photo {
+    position: relative;
+    margin-top: 100px;
+}
+
+.ContainerHeader {
+    width: 310px;
+    color: black;
+    position: relative;
+    margin-top: 100px;
+}
+
+
+/*         ABOUT SECTION CSS     */
+
+
+.AboutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.AboutRightContainer {
+    width: 450px;
+    padding: 2%;
+}
+
+.AboutBoxes {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.AboutBox {
+    border: 2px solid cyan;
+    border-radius: 5px;
+    padding: 2px 3px 2px 3px;
+}
+
+#Download {
+    background-color: var(--color);
+    padding: 10px 20px 10px 20px;
+    border-radius: 18px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#Download:hover {
+    transform: scale(1.1);
+}
+
+.social-links img:hover {
+    border: 2px solid transparent;
+}
+
+
+/*        EDUCATION AND WORK EXPERIENCE CSS        */
+
+
+.ContainerEduWork {
+    background-image: url("components/eduworkexp.svg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.AfterContainerEduWork {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bg-box2 {
+    position: relative;
+    /* width: 100%; */
+    height: 80vh;
+    background-color: white;
+    opacity: 0.85;
+}
+
+.card {
+    background-color: white;
+    padding: 16px;
+    border-radius: 4px;
+    width: 460px;
+    margin: 30px 0px 30px 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.institute {
+    color: var(--color);
+    font-weight: bold;
+    font-size: larger;
+}
+
+.date {
+    font-style: italic;
+    font-size: large;
+}
+
+.degree {
+    font-weight: bold;
+    font-size: large;
+}
+
+.AfterContainerEduWork h1 {
+    padding-bottom: 30px;
+}
+
+.HobbiesContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/*            MEDIA QUERIES FOR RESPONSIVE LAYOUT           */
+@media (max-width:950px) {
+    .ContainerEduWork {
+        height: 900px;
+    }
+
+    .bg-box2 {
+        height: 900px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        height: 800px;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .box-bgimg {
+        height: 800px;
+    }
+
+    .profile-photo {
+
+        margin-top: 10px;
+    }
+
+    .ContainerHeader {
+        margin-top: 15px;
+    }
+
+    .card {
+        width: 85vw;
+        margin: 40px;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+    }
+
+    .AboutRightContainer {
+        margin: auto;
+    }
+
+    .ContainerEduWork {
+        height: 1080px;
+    }
+
+    .bg-box2 {
+        height: 1080px;
+    }
+
+}
