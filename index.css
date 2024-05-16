@@ -43,6 +43,7 @@ nav>:first-child {
     background-color: var(--color1);
     border-radius: 5px;
     padding: 1px 8px 1px 8px;
+    min-width:fit-content;
 }
 
 .header {
