@@ -166,7 +166,7 @@ a:hover {
 }
 
 #Download:hover {
-    transform: scale(1.15);
+    transform: scale(1.13);
 }
 
 .social-links img:hover {
@@ -304,6 +304,9 @@ a:hover {
 
     .bg-box2 {
         height: 1080px;
+    }
+      nav>:nth-child(2) {
+        min-height: 85px;
     }
 
 }
