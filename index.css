@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: cursive;
 }
 
 :root {
@@ -22,8 +23,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     font-weight: bolder;
-    min-height:fit-content;
-    overflow:hidden;
+    min-height: 50px;
 
 }
 
@@ -44,7 +44,7 @@ nav>:first-child {
     background-color: var(--color1);
     border-radius: 5px;
     padding: 1px 8px 1px 8px;
-    min-width:fit-content;
+    min-width: fit-content;
 }
 
 .header {
@@ -53,6 +53,7 @@ nav>:first-child {
     background-size: max(1200px, 100vw);
     background-repeat: no-repeat;
     height: max(91vh, 570px);
+    overflow: hidden;
 }
 
 .box-bgimg {
@@ -78,6 +79,17 @@ nav>:first-child {
     font-size: 45px;
 }
 
+.linear_grad {
+    background: linear-gradient(to right, red, blue, red);
+    background-size: 200%;
+    animation: gradientMove 6s linear infinite;
+}
+
+.linear_grad_text_clip {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
 .mail,
 .phone,
 .location {
@@ -95,7 +107,7 @@ nav>:first-child {
 }
 
 .social-links {
-    padding: 30px 0px 30px 0px;
+    padding: 20px 0px 20px 0px;
     display: flex;
     justify-content: space-around;
 }
@@ -161,12 +173,13 @@ a:hover {
     border-radius: 18px;
     border: none;
     margin-top: 20px;
+    margin-bottom: 20px;
     cursor: pointer;
     transition: transform 0.3s;
 }
 
 #Download:hover {
-    transform: scale(1.13);
+    transform: scale(1.15);
 }
 
 .social-links img:hover {
@@ -204,6 +217,7 @@ a:hover {
 }
 
 .card {
+    font-size: small;
     background-color: white;
     padding: 16px;
     border-radius: 4px;
@@ -239,13 +253,26 @@ a:hover {
 }
 
 .HobbiesContainer {
-    margin-top: 50px;
+    margin-top: 80px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
-/* .Cards{margin: auto;} */
+
+
+/*             ANIMATIONS              */
+@keyframes gradientMove {
+    0% {
+
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 200%;
+    }
+}
+
 
 /*            MEDIA QUERIES FOR RESPONSIVE LAYOUT           */
 @media (max-width:950px) {
@@ -265,6 +292,10 @@ a:hover {
 
     * {
         overflow-x: hidden;
+    }
+
+    nav>:nth-child(2) {
+        min-height: 85px;
     }
 
     .btn {
@@ -304,9 +335,6 @@ a:hover {
 
     .bg-box2 {
         height: 1080px;
-    }
-      nav>:nth-child(2) {
-        min-height: 85px;
     }
 
 }
