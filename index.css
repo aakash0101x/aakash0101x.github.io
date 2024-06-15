@@ -130,6 +130,15 @@ a:hover {
     margin-top: 100px;
 }
 
+.profile-photo>img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.profile-photo>img:hover {
+    filter: drop-shadow(0 20px 20px rgba(0, 0, 0, 0.5));
+    transform: scale(1.06);
+}
+
 .ContainerHeader {
     width: 310px;
     color: black;
@@ -285,7 +294,7 @@ a:hover {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 565px) {
     .header {
         height: 800px;
     }
@@ -307,7 +316,7 @@ a:hover {
     }
 
     .profile-photo {
-
+        padding:52px;
         margin-top: 10px;
     }
 
