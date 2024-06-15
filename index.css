@@ -296,7 +296,7 @@ a:hover {
 
 @media (max-width: 565px) {
     .header {
-        height: 800px;
+        height: 880px;
     }
 
     * {
@@ -312,7 +312,7 @@ a:hover {
     }
 
     .box-bgimg {
-        height: 800px;
+        height: 880px;
     }
 
     .profile-photo {
