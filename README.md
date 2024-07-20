@@ -1,6 +1,6 @@
-## Resume Website
+## Personal Landing Page
 
-This is a simple resume website created using HTML, CSS, and JavaScript. It serves as a digital portfolio to showcase my skills, experience, and projects. Below are the details on how to use and customize this website template according to your needs.
+This is a simple Personal Landing Page website created using HTML, CSS, and JavaScript. It serves as a digital portfolio to showcase my skills, experience, and projects. Below are the details on how to use and customize this website template according to your needs.
 
 ## Features:
 Responsive Design: The website is designed to be responsive and can adapt to various screen sizes, ensuring optimal viewing experience across devices.
