@@ -230,7 +230,7 @@ a:hover {
 
 .carousel-logos {
     display: inline-block;
-    animation: 25s carousel infinite linear;
+    animation: 30s carousel infinite linear;
 }
 
 .carousel-logos img {
