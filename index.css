@@ -195,6 +195,47 @@ a:hover {
     border: 2px solid transparent;
 }
 
+/*                    CAROUSEL CSS                   */
+.carousel {
+    overflow: hidden;
+    padding: 60px 0;
+    background: azure;
+    white-space: nowrap;
+    position: relative;
+}
+
+.carousel:before,
+.carousel:after {
+    position: absolute;
+    top: 0;
+    width: 220px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.carousel:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.carousel:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.carousel:hover .carousel-logos {
+    animation-play-state: paused;
+}
+
+.carousel-logos {
+    display: inline-block;
+    animation: 35s carousel infinite linear;
+}
+
+.carousel-logos img {
+    margin: 0 40px;
+}
 
 /*        EDUCATION AND WORK EXPERIENCE CSS        */
 
@@ -282,6 +323,16 @@ a:hover {
     }
 }
 
+@keyframes carousel {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
 
 /*            MEDIA QUERIES FOR RESPONSIVE LAYOUT           */
 @media (max-width:950px) {
@@ -316,7 +367,7 @@ a:hover {
     }
 
     .profile-photo {
-        padding:52px;
+        padding: 52px;
         margin-top: 10px;
     }
 
