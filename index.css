@@ -82,7 +82,7 @@ nav>:first-child {
 .linear_grad {
     background: linear-gradient(to right, red, blue, red);
     background-size: 200%;
-    animation: gradientMove 6s linear infinite;
+    animation: gradientMove 5s linear infinite;
 }
 
 .linear_grad_text_clip {
@@ -260,7 +260,6 @@ a:hover {
 
 .bg-box2 {
     position: relative;
-    /* width: 100%; */
     height: 80vh;
     background-color: white;
     opacity: 0.85;
@@ -302,8 +301,15 @@ a:hover {
     padding-bottom: 30px;
 }
 
+.WorkExp>.card{
+    cursor: pointer;
+}
+
+u:hover{
+    color: aqua;
+}
 .HobbiesContainer {
-    margin-top: 80px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -337,11 +343,11 @@ a:hover {
 /*            MEDIA QUERIES FOR RESPONSIVE LAYOUT           */
 @media (max-width:950px) {
     .ContainerEduWork {
-        height: 900px;
+        height: 1050px;
     }
 
     .bg-box2 {
-        height: 900px;
+        height: 1050px;
     }
 }
 
@@ -390,11 +396,11 @@ a:hover {
     }
 
     .ContainerEduWork {
-        height: 1080px;
+        height: 1300px;
     }
 
     .bg-box2 {
-        height: 1080px;
+        height: 1300px;
     }
 
 }

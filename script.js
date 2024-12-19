@@ -15,4 +15,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
+document.getElementsByTagName("i")[0].addEventListener('click', function () {
+    window.open("https://byte-blog-wine.vercel.app/", '_blank', 'noopener,noreferrer');
+});
+document.querySelectorAll('.WorkExp > .card').forEach(card => {
+    card.addEventListener('click', function () {
+        window.open("https://github.com/aakash0101x?tab=repositories", '_blank', 'noopener,noreferrer');
+    });
+});
