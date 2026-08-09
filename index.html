@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page - Aakash Patel | Freelance Web Developer</title>
+    <title>Landing Page - Aakash Patel | Software Developer | Freelance Developer</title>
     <link rel="icon" href="components/favicon.jpg">
     <link rel="stylesheet" href="index.css">
 </head>
@@ -16,9 +16,10 @@
                 <div>AK</div>
                 <div><a href="#Home">Home</a>
                     <a href="#About">About</a>
-                    <a href="#About">Skills</a>
-                    <a href="#EduWork">Experiences</a>
-                    <a href="https://github.com/aakash0101x?tab=repositories" target="_blank">Portfolio</a>
+                    <a href="#Projects">Projects</a>
+                    <a href="#EduWork">Experience</a>
+                    <a href="#Contact">Contact</a>
+                    <a href="https://github.com/aakash0101x" target="_blank">Portfolio</a>
                 </div>
             </nav>
             <div class="container">
@@ -28,38 +29,32 @@
                 <div class="ContainerHeader">
                     <div class="hello">Hello I'm</div>
                     <h1 class="linear_grad linear_grad_text_clip">Aakash Patel</h1>
-                    <h2 class="linear_grad linear_grad_text_clip">Student</h2>
+                    <h2 class="linear_grad linear_grad_text_clip" style="font-size: 26px;">Software Developer</h2>
                     <br>
                     <div class="mail">
                         <img src="components/mail.svg" alt="mail svg">
-                        <a href="mailto:akpatel.2207x@gmail.com">ak.developers0101@gmail.com</a>
+                        <a href="mailto:aakash.patel0101x@gmail.com">aakash.patel0101x@gmail.com</a>
                     </div>
                     <div class="phone">
                         <img src="components/phone.svg" alt="phone svg">
                         <a href="tel:+917011978939">+91 7011978939</a>
-
                     </div>
                     <div class="location">
                         <img src="components/location.svg" alt="location svg">
-                        <a href="#">Haryana, India</a>
+                        <a href="#">Hyderabad, Telangana, India</a>
                     </div>
 
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/aakash-patel-5a9639250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        <a href="https://www.linkedin.com/in/aakash-patel-5a9639250/"
                             target="_blank"><img width="40" src="components/linkedin.svg" alt=""></a>
 
-
-
-                        <a href="https://github.com/aakash0101x?tab=repositories" target="_blank"> <img width="40"
+                        <a href="https://github.com/aakash0101x" target="_blank"> <img width="40"
                                 src="components/GitHub.svg" alt=""></a>
-
 
                         <a href="https://x.com/Aakash2022x?t=ySoVprJI2jIwfTkdJ9kcBw&s=09" target="_blank"> <img
                                 width="40" src="components/x.svg" alt=""></a>
                     </div>
-
                 </div>
-
             </div>
         </div>
         <div class="box-bgimg"></div>
@@ -69,26 +64,26 @@
             <img src="components/about.svg" width="490" alt="">
             <div class="AboutRightContainer">
                 <h1>About Me</h1>
-                <p>Hey there, I'm <strong>Aakash Patel</strong>, a <strong>computer science student</strong> skilled in <strong>full-stack web development</strong>. I'm
-                    passionate about crafting sleek digital solutions and thrive on challenges. With expertise in
-                    <strong>frontend and backend</strong> technologies, I'm ready to tackle any project. Eager to excel by embracing new
-                    technologies and methodologies to drive innovation. Let's collaborate and create something
-                    remarkable!</p>
+                <p>Hey there, I'm <strong>Aakash Patel</strong>, a passionate <strong>Software Developer</strong> and <strong>Computer Science student</strong>. I specialize in full-stack web development, crafting clean user interfaces, and designing scalable backends. With experience in creating RESTful APIs, integrating third-party services like AWS, and writing optimized database queries, I strive to build high-performance applications. I love solving DSA problems and am always eager to learn and implement cutting-edge technologies.</p>
                 <br>
                 <h2>Skills</h2>
                 <div class="AboutBoxes">
+                    <div class="AboutBox">C/C++</div>
+                    <div class="AboutBox">JavaScript</div>
+                    <div class="AboutBox">Python</div>
+                    <div class="AboutBox">SQL</div>
                     <div class="AboutBox">HTML</div>
                     <div class="AboutBox">CSS</div>
-                    <div class="AboutBox">JAVASCRIPT</div>
-                    <div class="AboutBox">PHP</div>
-                    <div class="AboutBox">MySQL</div>
-                    <div class="AboutBox">ReactJS</div>
-                    <div class="AboutBox">NodeJs</div>
-                    <div class="AboutBox">Appwrite</div>
-                    <div class="AboutBox">C / C++</div>
-                    <div class="AboutBox">ExpressJs</div>
+                    <div class="AboutBox">React</div>
+                    <div class="AboutBox">Node.js</div>
+                    <div class="AboutBox">Express.js</div>
+                    <div class="AboutBox">FastAPI</div>
                     <div class="AboutBox">Tailwind CSS</div>
-
+                    <div class="AboutBox">Appwrite</div>
+                    <div class="AboutBox">MySQL</div>
+                    <div class="AboutBox">MongoDB</div>
+                    <div class="AboutBox">OracleDB</div>
+                    <div class="AboutBox">Git / GitHub</div>
                 </div>
                 <div class="btn">
                     <button id="Download">Download CV</button>
@@ -115,49 +110,160 @@
             var copy = document.getElementsByClassName("carousel-logos")[0].cloneNode(true);
             document.getElementsByClassName("carousel")[0].appendChild(copy)
         </script>
+
+        <div id="Projects" class="ProjectsContainer">
+            <h1>Featured Projects</h1>
+            <div class="ProjectsGrid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-title">ByteBlog</span>
+                        <a href="https://byte-blog-wine.vercel.app/" target="_blank" class="project-link">
+                            <img src="components/vercel.svg" alt="live demo icon">
+                        </a>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Tailwind CSS</span>
+                        <span class="tag">Redux</span>
+                        <span class="tag">Appwrite</span>
+                        <span class="tag">Node.js</span>
+                    </div>
+                    <ul class="project-bullets">
+                        <li>Built and implemented a fully-featured blogging platform using React for a dynamic, responsive user interface.</li>
+                        <li>Enabled user authentication, personalized feed, blog uploading, editing, and deleting capabilities.</li>
+                        <li>Integrated Redux Toolkit for scalable state management, reducing page transition latency by 40%.</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-title">CampusPilot</span>
+                        <a href="https://campus-pilot-iota.vercel.app/" target="_blank" class="project-link">
+                            <img src="components/vercel.svg" alt="live demo icon">
+                        </a>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Express.js</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">REST API</span>
+                    </div>
+                    <ul class="project-bullets">
+                        <li>Engineered a college management system supporting student, faculty, and admin roles, improving operational efficiency by 65%.</li>
+                        <li>Created dynamic modules including real-time notice tickers, auto-rotating image carousels, and dashboards.</li>
+                        <li>Developed a secure RESTful backend with Express.js and MySQL, managing 1000+ records efficiently.</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-title">Airline Booking System</span>
+                        <a href="https://github.com/aakash0101x/Airline-Ticket-Booking-System" target="_blank" class="project-link">
+                            <img src="components/GitHub.svg" alt="github icon">
+                        </a>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">OOP</span>
+                        <span class="tag">File Handling</span>
+                    </div>
+                    <ul class="project-bullets">
+                        <li>Programmed an Airline Ticket Booking System in C++ using OOP principles, reducing code redundancy by 20%.</li>
+                        <li>Developed a robust file-handling mechanism for managing user credentials, flight details, and booking records.</li>
+                        <li>Enforced core features like user auth, seat validation, flight searches, and cancellations with a 60% refund policy.</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-title">File Extension Organizer</span>
+                        <a href="https://github.com/aakash0101x/File-extension-Organizer" target="_blank" class="project-link">
+                            <img src="components/GitHub.svg" alt="github icon">
+                        </a>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">File System (fs)</span>
+                        <span class="tag">Automation</span>
+                    </div>
+                    <ul class="project-bullets">
+                        <li>Developed an automated file organizer script in Node.js utilizing the built-in File System ('fs') module for directory cleanups.</li>
+                        <li>Implemented dynamic categorization that scans and automatically organizes files into subdirectories based on their extensions.</li>
+                        <li>Designed error handling to manage duplicate filenames and system files, reducing folder clutter.</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-title">Netflix Clone</span>
+                        <a href="https://github.com/aakash0101x/Netflix-clone-website" target="_blank" class="project-link">
+                            <img src="components/GitHub.svg" alt="github icon">
+                        </a>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Responsive Design</span>
+                    </div>
+                    <ul class="project-bullets">
+                        <li>Recreated Netflix's web frontend clone from scratch, featuring pixel-perfect layout and original brand aesthetic.</li>
+                        <li>Implemented a responsive movie catalog view optimized for desktop, tablet, and mobile screens.</li>
+                        <li>Built custom interactive components including dynamic headers, accordion FAQ sections, and hover-triggered content scale effects.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         <div id="EduWork" class="ContainerEduWork">
             <div class="AfterContainerEduWork">
                 <div class="edu">
                     <h1>Education</h1>
                     <div class="card">
-                        <div class="institute">Indian Institute Of Information Technology,Nagpur</div>
-                        <div class="date">2022 to present</div>
-                        <div class="degree">Pursuing B.Tech</div>
+                        <div class="institute">IIIT Nagpur</div>
+                        <div class="date">Oct 2022 - June 2026</div>
+                        <div class="degree">B.Tech in Computer Science and Engineering</div>
+                        <div class="coursework" style="margin-top: 8px; font-size: 13px;">
+                            <strong>Relevant Coursework:</strong> Data Structures and Algorithms, Operating Systems, Computer Networks, Object Oriented Programming, Database Management Systems.
+                        </div>
                     </div>
                     <div class="card">
-                        <div class="institute">Shreeram Model High School,Faridabad</div>
+                        <div class="institute">Shreeram Model High School, Faridabad</div>
                         <div class="date">2022</div>
-                        <div class="degree">Passed Senior Secondary Education with 94.4%</div>
+                        <div class="degree">XII (CBSE) | Passed with 94.2%</div>
                     </div>
                     <div class="card">
-                        <div class="institute">Shreeram Model High School,Faridabad</div>
+                        <div class="institute">Shreeram Model High School, Faridabad</div>
                         <div class="date">2020</div>
-                        <div class="degree">Passed Secondary Education with 91.8%</div>
+                        <div class="degree">X (CBSE) | Passed with 91.8%</div>
                     </div>
-
                 </div>
                 <div class="WorkExp">
-                    <h1>Work Experiences</h1>
+                    <h1>Experience & Achievements</h1>
                     <div class="card">
-                        <div class="institute">Indian Institute Of Information Technology,Nagpur</div>
-                        <div class="date">2024</div>
-                        <div class="degree">Created Student Management Project</div>
+                        <div class="institute">KFin Technologies Limited</div>
+                        <div class="date">Sep 2025 – Present</div>
+                        <div class="degree">Software Developer Intern (Hyderabad, Telangana)</div>
+                        <ul class="exp-bullets" style="margin-top: 10px; margin-left: 15px; font-size: 13px;">
+                            <li>Contributed to MPower Wealth Report Module for portfolio analytics and report generation.</li>
+                            <li>Developed RESTful APIs using Python (FastAPI) to serve portfolio, transaction, and reporting data.</li>
+                            <li>Built a SQL query loader to preload queries at startup, saving 10ms response time and reducing traffic memory usage.</li>
+                            <li>Integrated AWS S3 document storage with FastAPI backend for secure invoice uploads.</li>
+                            <li>Utilized modular design patterns and Pandas for report generation and metric computation.</li>
+                        </ul>
                     </div>
-
                     <div class="card">
-                        <div class="institute">Indian Institute Of Information Technology,Nagpur</div>
-                        <div class="date">2024</div>
-                        <div class="degree">Created <u><i>ByteBlog</i></u>, a fully-featured blogging website </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="institute">Indian Institute Of Information Technology,Nagpur</div>
-                        <div class="date">2023</div>
-                        <div class="degree">Created Netflix Clone Website</div>
+                        <div class="institute">Achievements</div>
+                        <div class="date">Coding Profiles</div>
+                        <ul class="exp-bullets" style="margin-top: 10px; margin-left: 15px; font-size: 13px;">
+                            <li>Achieved a <a href="https://leetcode.com/u/aakash2207x/" target="_blank" style="color: var(--color2); font-weight: bold; text-decoration: underline;">LeetCode Max rating of 1691</a>, ranking in the top 13% globally.</li>
+                            <li>Solved more than 500 questions based on Data Structures and Algorithms.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="bg-box2"></div>
         </div>
         <div class="HobbiesContainer">
             <img src="components/hobby.jpg" width="400" alt="This is SVG image">
@@ -172,17 +278,65 @@
                 <div class="card">
                     <div class="institute">Watching Movies</div>
                 </div>
+            </div>
+        </div>
 
+        <div id="Contact" class="ContactContainer">
+            <h1>Contact Me</h1>
+            <div class="ContactContent">
+                <div class="ContactInfo">
+                    <h2>Get In Touch</h2>
+                    <p>Feel free to reach out to me for internship opportunities, project collaborations, or just a friendly hello! I'll do my best to get back to you as soon as possible.</p>
+                    
+                    <div class="ContactDetail">
+                        <img src="components/mail.svg" alt="email icon">
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:aakash.patel0101x@gmail.com">aakash.patel0101x@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="ContactDetail">
+                        <img src="components/phone.svg" alt="phone icon">
+                        <div>
+                            <h3>Phone</h3>
+                            <a href="tel:+917011978939">+91 7011978939</a>
+                        </div>
+                    </div>
+                    
+                    <div class="ContactDetail">
+                        <img src="components/location.svg" alt="location icon">
+                        <div>
+                            <h3>Location</h3>
+                            <span>Hyderabad, Telangana, India</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ContactForm">
+                    <form id="contact-form">
+                        <div class="FormGroup">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="FormGroup">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="Your Email">
+                        </div>
+                        <div class="FormGroup">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Subject">
+                        </div>
+                        <div class="FormGroup">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="SubmitBtn">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
-    <!-- <footer>
-        <h1>Contact Me</h1>
-        <div class="contact">
-            <div class="cn1"></div>
-            <div class="cn2"></div>
-        </div>
-    </footer> -->
     <script src="script.js"></script>
 </body>
 

@@ -241,44 +241,46 @@ a:hover {
 
 
 .ContainerEduWork {
-    background-image: url("components/eduworkexp.svg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("components/eduworkexp.svg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
+    min-height: 80vh;
+    padding: 60px 20px;
+    position: relative;
 }
 
 .AfterContainerEduWork {
-    position: absolute;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     z-index: 1;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .bg-box2 {
-    position: relative;
-    height: 80vh;
-    background-color: white;
-    opacity: 0.85;
+    display: none;
 }
 
 .card {
     font-size: small;
     background-color: white;
-    padding: 16px;
-    border-radius: 4px;
-    width: 460px;
-    margin: 30px 0px 30px 0px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 460px;
+    margin: 20px 0px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .institute {
@@ -290,6 +292,7 @@ a:hover {
 .date {
     font-style: italic;
     font-size: large;
+    margin: 4px 0;
 }
 
 .degree {
@@ -298,7 +301,99 @@ a:hover {
 }
 
 .AfterContainerEduWork h1 {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+/*                    PROJECTS SECTION CSS                   */
+.ProjectsContainer {
+    background-color: white;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.ProjectsContainer h1 {
+    margin-bottom: 40px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.ProjectsGrid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.project-card {
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 360px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0f2f1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 12px 30px rgba(11, 101, 119, 0.15);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.project-title {
+    color: var(--color2);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.project-link img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s;
+}
+
+.project-link img:hover {
+    transform: scale(1.25);
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.project-tags .tag {
+    background-color: #e0f7fa;
+    color: #006064;
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.project-bullets {
+    margin-left: 18px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.project-bullets li {
+    margin-bottom: 8px;
 }
 
 .WorkExp>.card{
@@ -341,19 +436,11 @@ u:hover{
 
 
 /*            MEDIA QUERIES FOR RESPONSIVE LAYOUT           */
-@media (max-width:950px) {
-    .ContainerEduWork {
-        height: 1050px;
-    }
-
-    .bg-box2 {
-        height: 1050px;
-    }
-}
-
 @media (max-width: 565px) {
     .header {
-        height: 880px;
+        height: auto;
+        min-height: 880px;
+        padding-bottom: 40px;
     }
 
     * {
@@ -369,11 +456,12 @@ u:hover{
     }
 
     .box-bgimg {
-        height: 880px;
+        height: 100%;
+        min-height: 880px;
     }
 
     .profile-photo {
-        padding: 52px;
+        padding: 20px;
         margin-top: 10px;
     }
 
@@ -382,8 +470,7 @@ u:hover{
     }
 
     .card {
-        width: 83vw;
-        margin: 40px;
+        margin: 15px auto;
     }
 
     h1,
@@ -395,12 +482,172 @@ u:hover{
         margin: auto;
     }
 
-    .ContainerEduWork {
-        height: 1300px;
+    .ContactForm {
+        padding: 20px;
     }
-
-    .bg-box2 {
-        height: 1300px;
-    }
-
 }
+
+/*                    CONTACT SECTION CSS                   */
+.ContactContainer {
+    background-color: azure;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.ContactContainer h1 {
+    margin-bottom: 40px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.ContactContent {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1100px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.ContactInfo {
+    flex: 1 1 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.ContactInfo h2 {
+    color: var(--color2);
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.ContactInfo p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.ContactDetail {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.ContactDetail img {
+    width: 28px;
+    height: 28px;
+    margin-top: 5px;
+}
+
+.ContactDetail h3 {
+    font-size: 16px;
+    color: var(--color2);
+    margin-bottom: 2px;
+}
+
+.ContactDetail a,
+.ContactDetail span {
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    line-height: 1.4;
+}
+
+.ContactDetail a:hover {
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+.ContactForm {
+    flex: 1 1 450px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0f2f1;
+}
+
+.FormGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.FormGroup label {
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--color2);
+}
+
+.FormGroup input,
+.FormGroup textarea {
+    padding: 12px;
+    border: 2px solid #e0f2f1;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.FormGroup input:focus,
+.FormGroup textarea:focus {
+    outline: none;
+    border-color: var(--color1);
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.2);
+}
+
+.SubmitBtn {
+    background-color: var(--color1);
+    color: black;
+    padding: 12px 24px;
+    border-radius: 20px;
+    border: none;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+}
+
+.SubmitBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.4);
+}
+
+/* Form Status Message Styling */
+.FormStatus {
+    margin-top: 15px;
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: center;
+    display: none;
+    font-weight: bold;
+}
+
+.FormStatus.success {
+    display: block;
+    background-color: #e0f2f1;
+    color: #006064;
+    border: 1px solid #b2dfdb;
+}
+
+.FormStatus.error {
+    display: block;
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}
+
+.SubmitBtn:disabled {
+    background-color: #b2dfdb;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
